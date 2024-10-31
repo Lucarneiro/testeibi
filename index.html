@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBI | Busca de Planos de Internet</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="./IMG/logo.png" alt="logo IBI Telecom">
+      <h1>Busca de Planos de Internet</h1>
+    </div>
+  </header>
+
+  <section>
+
+    <div id="titulo">
+
+      <h1><img src="./IMG/funnel.svg" alt="icone funil">Filtros</h1>
+    </div>
+    <div id="filtros">
+      <label for="nome" id="tituloNome">Nome do Plano</label>
+      <input type="text" id="nome" placeholder="Digite o nome do plano">
+
+      <label for="tipoPlano" id="tituloTipoPlano">Planos Favoritos</label>
+      <select title="select" name="tipoPlano" id="tipoPlano">
+        <option value="empty">Não Selecionado</option>
+        <option data-modal="sim" value="sim">SIM</option>
+        <option data-modal="nao" value="não">NÃO</option>
+      </select>
+    </div>
+  </section>
+
+  <table id="tabela">
+    <thead>
+      <tr>
+        <th>Favoritar</th>
+        <th>Nome do Plano</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody id="corpoTabela">
+      <tr class="row">
+        <td>
+          <button class="favorite-btn">
+            <img src="./IMG/heart.svg" alt="icone coracao" class="favorite-icon">
+          </button>
+        </td>
+        <td>Plano IBI + 1</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+      <tr class="row">
+        <td>
+          <button class="favorite-btn">
+            <img src="./IMG/heart.svg" alt="icone coracao" class="favorite-icon">
+          </button>
+        </td>
+        <td>Plano VHE</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+      <tr class="row">
+        <td>
+          <button class="favorite-btn">
+            <img src="./IMG/heart.svg" alt="icone coracao" class="favorite-icon">
+          </button>
+        </td>
+        <td>330mb Plano IBI telecom</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+      <tr class="row">
+        <td>
+          <button class="favorite-btn">
+            <img src="./IMG/heart.svg" alt="icone coracao" class="favorite-icon">
+          </button>
+        </td>
+        <td>Plano Internet Ilimitada</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+      <tr class="row">
+        <td>
+          <button class="favorite-btn">
+            <img src="./IMG/heart.svg" alt="icone coracao" class="favorite-icon">
+          </button>
+        </td>
+        <td>IBI internet 330mb</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+#tabela {
+  border: solid 1px rgb(207, 208, 207);
+  border-radius: 7px;
+  border-collapse: collapse;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#tabela tr th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  align-items: center;
+  background-color: #e2e1e1;
+  padding: 15px;
+}
+
+#tabela tr td {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+#tabela tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+button .favorite-icon.favorito {
+  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(345deg)
+    brightness(95%);
+  transition: 0.3s;
+}
